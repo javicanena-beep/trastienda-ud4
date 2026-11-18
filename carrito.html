@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cesta - La Trastienda</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="La Trastienda, inicio">La Trastienda</a>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Buscar">🔍</button>
+        <button class="icon-button" type="button" aria-label="Abrir menú">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Mi cesta · 2 artículos</h1>
+
+      <section aria-label="Libros en la cesta">
+        <article class="cart-item">
+          <div class="book-cover" aria-hidden="true">LP</div>
+          <div class="cart-details">
+            <h2>La paciente silenciosa</h2>
+            <p>Alex Michaelides · Tapa dura</p>
+            <div class="quantity-controls">
+              <button type="button" aria-label="Quitar un ejemplar de La paciente silenciosa">−</button>
+              <span>1</span>
+              <button type="button" aria-label="Añadir un ejemplar de La paciente silenciosa">+</button>
+              <strong>19,90 €</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart-item">
+          <div class="book-cover" aria-hidden="true">SC</div>
+          <div class="cart-details">
+            <h2>El silencio de la ciudad blanca</h2>
+            <p>Eva García Sáenz de Urturi · Ebook</p>
+            <div class="quantity-controls">
+              <button type="button" aria-label="Quitar un ejemplar de El silencio de la ciudad blanca">−</button>
+              <span>1</span>
+              <button type="button" aria-label="Añadir un ejemplar de El silencio de la ciudad blanca">+</button>
+              <strong>9,99 €</strong>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="cart-summary" aria-labelledby="resumen-titulo">
+        <h2 id="resumen-titulo">Resumen</h2>
+        <dl>
+          <div>
+            <dt>Subtotal</dt>
+            <dd>29,89 €</dd>
+          </div>
+          <div>
+            <dt>Envío</dt>
+            <dd>Gratis</dd>
+          </div>
+          <div class="total">
+            <dt>Total</dt>
+            <dd>29,89 €</dd>
+          </div>
+        </dl>
+        <button class="checkout-button" type="button">Tramitar pedido</button>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Secciones de la app">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="carrito.html" aria-current="page">Cesta</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

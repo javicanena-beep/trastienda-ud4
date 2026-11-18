@@ -2,199 +2,101 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f6f3ed">
-    <meta name="description" content="Descubre las novedades y recomendaciones de La Trastienda.">
-    <title>Inicio | La Trastienda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - La Trastienda</title>
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
-    <div class="page-shell" id="inicio">
-      <header class="site-header">
-        <a class="brand" href="#inicio" aria-label="La Trastienda, inicio">
-          <span class="brand-mark" aria-hidden="true">lt</span>
-          <span>la trastienda</span>
-        </a>
-        <div class="header-actions">
-          <a class="icon-button search-button" href="#explorar" aria-label="Explorar libros">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="10.8" cy="10.8" r="6.8"></circle>
-              <path d="m16 16 4.5 4.5"></path>
-            </svg>
-          </a>
-          <a class="profile-shortcut" id="perfil" href="#perfil">
-            <span class="profile-avatar" aria-hidden="true">L</span>
-            <span>Mi perfil</span>
-          </a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="La Trastienda, inicio">La Trastienda</a>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Buscar">🔍</button>
+        <button class="icon-button" type="button" aria-label="Abrir menú">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Novela negra y thriller</h1>
+
+      <section aria-labelledby="novedades-titulo">
+        <h2 id="novedades-titulo">Novedades</h2>
+        <div class="book-list">
+          <article>
+            <div class="book-cover" aria-hidden="true">LP</div>
+            <div class="book-details">
+              <h3><a href="detalle.html">La paciente silenciosa</a></h3>
+              <p>Alex Michaelides</p>
+              <p>19,90 €</p>
+            </div>
+          </article>
+          <article>
+            <div class="book-cover" aria-hidden="true">SC</div>
+            <div class="book-details">
+              <h3><a href="detalle.html">El silencio de la ciudad blanca</a></h3>
+              <p>Eva García Sáenz de Urturi</p>
+              <p>20,90 €</p>
+            </div>
+          </article>
+          <article>
+            <div class="book-cover" aria-hidden="true">RE</div>
+            <div class="book-details">
+              <h3><a href="detalle.html">Reina roja</a></h3>
+              <p>Juan Gómez-Jurado</p>
+              <p>18,90 €</p>
+            </div>
+          </article>
+          <article>
+            <div class="book-cover" aria-hidden="true">NI</div>
+            <div class="book-details">
+              <h3><a href="detalle.html">Nadie lo sabe</a></h3>
+              <p>Álex de la Iglesia</p>
+              <p>21,50 €</p>
+            </div>
+          </article>
         </div>
-      </header>
+      </section>
 
-      <main>
-        <section class="welcome-panel" aria-labelledby="home-title">
-          <div class="welcome-copy">
-            <p class="eyebrow">UN RINCÓN PARA LEER SIN PRISA</p>
-            <h1 id="home-title">Historias que<br>te encuentran.</h1>
-            <p class="welcome-description">Explora nuevas voces, vuelve a tus clásicos favoritos y encuentra tu próxima lectura.</p>
-            <a class="primary-link" href="#explorar">
-              Descubrir libros
-              <svg viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M3.5 10h12m-5-5 5 5-5 5"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="welcome-art" aria-hidden="true">
-            <span class="sun-disc"></span>
-            <span class="art-book art-book-one"></span>
-            <span class="art-book art-book-two"></span>
-            <span class="art-book art-book-three"></span>
-            <span class="art-sparkle sparkle-one">✳</span>
-            <span class="art-sparkle sparkle-two">✦</span>
-            <span class="art-caption">una página<br>cada vez</span>
-          </div>
-        </section>
-
-        <section class="books-section" id="novedades" aria-labelledby="new-books-title">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">RECIÉN LLEGADOS</p>
-              <h2 id="new-books-title">Novedades</h2>
+      <section aria-labelledby="recomendados-titulo">
+        <h2 id="recomendados-titulo">Recomendados</h2>
+        <div class="book-list">
+          <article>
+            <div class="book-cover" aria-hidden="true">SC</div>
+            <div class="book-details">
+              <h3><a href="detalle.html">El silencio de la ciudad blanca</a></h3>
+              <p>Eva García Sáenz de Urturi</p>
+              <p>20,90 €</p>
+              <button type="button">Añadir a la cesta</button>
             </div>
-            <span class="section-count">04 libros</span>
-          </div>
-          <div class="book-grid new-books">
-            <article class="book-card">
-              <div class="book-cover cover-frankenstein" aria-hidden="true">
-                <span class="cover-kicker">CLÁSICOS DE SIEMPRE</span>
-                <span class="cover-title">Frankenstein</span>
-                <span class="cover-author">Mary Shelley</span>
-              </div>
-              <div class="book-info">
-                <p class="book-category">Gótico · Clásico</p>
-                <h3>Frankenstein</h3>
-                <p class="book-author">Mary Shelley</p>
-              </div>
-            </article>
-            <article class="book-card">
-              <div class="book-cover cover-dracula" aria-hidden="true">
-                <span class="cover-kicker">CLÁSICOS DE SIEMPRE</span>
-                <span class="cover-title">Drácula</span>
-                <span class="cover-author">Bram Stoker</span>
-              </div>
-              <div class="book-info">
-                <p class="book-category">Terror · Clásico</p>
-                <h3>Drácula</h3>
-                <p class="book-author">Bram Stoker</p>
-              </div>
-            </article>
-            <article class="book-card">
-              <div class="book-cover cover-dorian" aria-hidden="true">
-                <span class="cover-kicker">CLÁSICOS DE SIEMPRE</span>
-                <span class="cover-title">El retrato de Dorian Gray</span>
-                <span class="cover-author">Oscar Wilde</span>
-              </div>
-              <div class="book-info">
-                <p class="book-category">Ficción · Clásico</p>
-                <h3>El retrato de Dorian Gray</h3>
-                <p class="book-author">Oscar Wilde</p>
-              </div>
-            </article>
-            <article class="book-card">
-              <div class="book-cover cover-pride" aria-hidden="true">
-                <span class="cover-kicker">CLÁSICOS DE SIEMPRE</span>
-                <span class="cover-title">Orgullo y prejuicio</span>
-                <span class="cover-author">Jane Austen</span>
-              </div>
-              <div class="book-info">
-                <p class="book-category">Romance · Clásico</p>
-                <h3>Orgullo y prejuicio</h3>
-                <p class="book-author">Jane Austen</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="books-section recommended-section" id="explorar" aria-labelledby="recommended-title">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">ELEGIDOS PARA TI</p>
-              <h2 id="recommended-title">Recomendados</h2>
+          </article>
+          <article>
+            <div class="book-cover" aria-hidden="true">LP</div>
+            <div class="book-details">
+              <h3><a href="detalle.html">La paciente silenciosa</a></h3>
+              <p>Alex Michaelides</p>
+              <p>19,90 €</p>
+              <button type="button">Añadir a la cesta</button>
             </div>
-            <span class="section-count">03 libros</span>
-          </div>
-          <div class="book-grid recommended-grid">
-            <article class="book-card recommended-card">
-              <div class="book-cover cover-little-women" aria-hidden="true">
-                <span class="cover-kicker">UNA HISTORIA PARA COMPARTIR</span>
-                <span class="cover-title">Mujercitas</span>
-                <span class="cover-author">Louisa May Alcott</span>
-              </div>
-              <div class="book-info">
-                <p class="book-category">Familia · Clásico</p>
-                <h3>Mujercitas</h3>
-                <p class="book-author">Louisa May Alcott</p>
-                <p class="book-description">Cuatro hermanas crecen, sueñan y encuentran su propio camino.</p>
-              </div>
-            </article>
-            <article class="book-card recommended-card">
-              <div class="book-cover cover-alice" aria-hidden="true">
-                <span class="cover-kicker">ATRÉVETE A IMAGINAR</span>
-                <span class="cover-title">Alicia en el país de las maravillas</span>
-                <span class="cover-author">Lewis Carroll</span>
-              </div>
-              <div class="book-info">
-                <p class="book-category">Fantasía · Aventura</p>
-                <h3>Alicia en el país de las maravillas</h3>
-                <p class="book-author">Lewis Carroll</p>
-                <p class="book-description">Un viaje sorprendente al otro lado de la madriguera.</p>
-              </div>
-            </article>
-            <article class="book-card recommended-card">
-              <div class="book-cover cover-holmes" aria-hidden="true">
-                <span class="cover-kicker">UN MISTERIO POR RESOLVER</span>
-                <span class="cover-title">Sherlock Holmes</span>
-                <span class="cover-author">Arthur Conan Doyle</span>
-              </div>
-              <div class="book-info">
-                <p class="book-category">Misterio · Aventuras</p>
-                <h3>Las aventuras de Sherlock Holmes</h3>
-                <p class="book-author">Arthur Conan Doyle</p>
-                <p class="book-description">Casos ingeniosos para lectores con ojo de detective.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-      </main>
-    </div>
+          </article>
+          <article>
+            <div class="book-cover" aria-hidden="true">RQ</div>
+            <div class="book-details">
+              <h3><a href="detalle.html">El ritmo del corazón</a></h3>
+              <p>María Dueñas</p>
+              <p>22,90 €</p>
+              <button type="button">Añadir a la cesta</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
-    <nav class="bottom-nav" aria-label="Navegación inferior">
-      <a class="nav-item is-active" href="#inicio" aria-current="page">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path>
-        </svg>
-        <span>Inicio</span>
-      </a>
-      <a class="nav-item" href="#explorar">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="9"></circle>
-          <path d="m15.8 8.2-2.2 5.4-5.4 2.2 2.2-5.4z"></path>
-        </svg>
-        <span>Explorar</span>
-      </a>
-      <a class="nav-item" href="carrito.html">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.5L21 8H6"></path>
-          <circle cx="10" cy="20" r="1"></circle>
-          <circle cx="18" cy="20" r="1"></circle>
-        </svg>
-        <span>Cesta</span>
-      </a>
-      <a class="nav-item" href="#perfil">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="8" r="3.5"></circle>
-          <path d="M5 21a7 7 0 0 1 14 0"></path>
-        </svg>
-        <span>Perfil</span>
-      </a>
+    <nav class="bottom-nav" aria-label="Secciones de la app">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="carrito.html">Cesta</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
     </nav>
   </body>
 </html>

@@ -1,0 +1,256 @@
+:root {
+  color-scheme: light;
+  --ink: #24211d;
+  --paper: #f8f5ef;
+  --primary: #8e3b46;
+  --primary-dark: #66252d;
+  --muted: #756f66;
+  --line: #ddd5c8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 76px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+
+a {
+  color: var(--primary);
+}
+
+.brand {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+main {
+  width: min(100%, 393px);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 8px 0 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 28px 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+}
+
+h3 {
+  margin: 8px 0 4px;
+  font-size: 1rem;
+}
+
+.book-list {
+  display: grid;
+  gap: 12px;
+}
+
+.book-list article,
+.cart-item {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.book-cover {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  min-height: 112px;
+  border-radius: 6px;
+  background: var(--primary);
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.book-details p,
+.cart-details p {
+  margin: 4px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.book-details button,
+.checkout-button,
+.quantity-controls button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.book-details button {
+  margin-top: 8px;
+  padding: 8px 12px;
+}
+
+.cart-item {
+  grid-template-columns: 84px 1fr;
+  margin-bottom: 12px;
+}
+
+.cart-details h2 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.quantity-controls {
+  display: grid;
+  grid-template-columns: 40px 28px 40px 1fr;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.quantity-controls strong {
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.quantity-controls button {
+  width: 40px;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.quantity-controls span {
+  text-align: center;
+}
+
+.cart-summary {
+  margin-top: 24px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.cart-summary h2 {
+  margin-top: 0;
+}
+
+.cart-summary dl,
+.cart-summary dl div {
+  margin: 0;
+}
+
+.cart-summary dl div {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.cart-summary dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.cart-summary .total {
+  margin-top: 8px;
+  border-top: 1px solid var(--line);
+  font-size: 1.1rem;
+}
+
+.checkout-button {
+  width: 100%;
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.bottom-nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+}
+
+.bottom-nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.bottom-nav a {
+  display: block;
+  padding: 8px 4px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bottom-nav a[aria-current="page"] {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #e2a8b0;
+  outline-offset: 2px;
+}
