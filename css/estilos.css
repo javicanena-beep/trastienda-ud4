@@ -91,11 +91,50 @@ h3 {
   font-size: 1rem;
 }
 
+section:where(.book-list),
 .book-list {
   display: grid;
   gap: 12px;
 }
 
+main > section {
+  display: grid;
+  gap: 12px;
+}
+
+main > section > h2 {
+  margin-bottom: 2px;
+}
+
+h2 + .card {
+  border-top: 3px solid var(--primary);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 6px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #f1dce0;
+  color: var(--primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge:empty {
+  display: none;
+}
+
+article:has(.badge:not(:empty)) {
+  border-color: var(--primary);
+  box-shadow: 0 2px 10px rgb(142 59 70 / 12%);
+}
+
+.card,
 .book-list article,
 .cart-item {
   display: grid;
@@ -244,13 +283,30 @@ h3 {
   text-decoration: none;
 }
 
-.bottom-nav a[aria-current="page"] {
+nav a[aria-current="page"] {
   color: var(--primary);
   font-weight: 700;
 }
 
+nav a:not([aria-current="page"]) {
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--primary-dark);
+}
+
+nav a:focus-visible,
 button:focus-visible,
 a:focus-visible {
   outline: 3px solid #e2a8b0;
   outline-offset: 2px;
+}
+
+button[aria-label] {
+  padding: 4px;
+}
+
+.card :is(h2, h3, p) {
+  margin-block: 4px;
 }
